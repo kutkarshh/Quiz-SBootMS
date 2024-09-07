@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ResultServiceApplication",
+            "request": "launch",
+            "mainClass": "com.result.ResultServiceApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-QuizServiceApplication<QuizService>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -47,6 +53,26 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.user.UserServiceApplication",
             "projectName": "UserService",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ResultServiceApplication<ResultService (2)>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.result.ResultServiceApplication",
+            "projectName": "ResultService (2)",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ResultServiceApplication<ResultService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.result.ResultServiceApplication",
+            "projectName": "ResultService",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
