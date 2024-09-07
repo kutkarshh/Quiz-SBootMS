@@ -1,20 +1,18 @@
-package com.quiz.services;
-
-import java.util.List;
+package com.result.services;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.quiz.entities.Question;
+import com.result.entities.User;
 
 // @FeignClient(url = "http://localhost:8082", value = "Question-Client")
 
 // Now Using Load Balancer with Eureka Server and Microservices Architecture
-@FeignClient(name = "QUESTION-SERVICE")
-public interface QuestionClient {
+@FeignClient(name = "USER-SERVICE")
+public interface UserClient {
 
-    @GetMapping("/question/quiz/{quizId}")
-    List<Question> getAllQuestionsOfQuiz(@PathVariable Long quizId);
+    @GetMapping("/user/{id}")
+    User getUserById(@PathVariable Long id);
 
 }

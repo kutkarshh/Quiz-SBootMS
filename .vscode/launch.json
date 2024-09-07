@@ -75,6 +75,16 @@
             "projectName": "ResultService",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ReportServiceApplication<ReportService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.report.ReportServiceApplication",
+            "projectName": "ReportService",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

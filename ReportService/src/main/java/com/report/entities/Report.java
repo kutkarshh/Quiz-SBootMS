@@ -1,4 +1,4 @@
-package com.result.entities;
+package com.report.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,14 +12,16 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class Result {
+@AllArgsConstructor
+public class Report {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long quizId;
     private Long userId;
-    transient private User user;
-    private int score;
+    private int totalQuizzesTaken;
+    private double averageScore;
+    private int highestScore;
+    private int lowestScore;
 }
