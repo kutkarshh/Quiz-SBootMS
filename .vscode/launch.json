@@ -29,6 +29,16 @@
             "projectName": "ServiceRegistry",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<ApiGateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.gateway.ApiGatewayApplication",
+            "projectName": "ApiGateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
